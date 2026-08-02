@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Столярная мастерская Ағаш в Каскелене и Алматы. Авторская мебель из массива берёзы, дуба и ясеня по индивидуальным размерам.">
+  <title>Ағаш — Мебель из массива по вашим размерам в Каскелене и Алматы</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Перейти к содержимому</a>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <a href="#" class="logo" aria-label="Столярная мастерская Ағаш">
+        <span class="logo-title">АҒАШ</span>
+        <span class="logo-sub">СТОЛЯРНАЯ МАСТЕРСКАЯ</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Главная навигация">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">О нас</a></li>
+          <li><a href="#catalog" class="nav-link">Каталог</a></li>
+          <li><a href="#calculator" class="nav-link">Калькулятор</a></li>
+          <li><a href="#services" class="nav-link">Услуги</a></li>
+          <li><a href="#gallery" class="nav-link">Галерея</a></li>
+          <li><a href="#reviews" class="nav-link">Отзывы</a></li>
+          <li><a href="#contacts" class="nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#calculator" class="btn btn-primary header-btn">Рассчитать стоимость</a>
+        <button type="button" class="burger-btn" id="burger-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU OVERLAY & PANEL -->
+  <div class="menu-overlay" id="menu-overlay" aria-hidden="true"></div>
+  <aside class="mobile-menu-panel" id="mobile-menu" aria-label="Мобильное меню" aria-hidden="true">
+    <div class="mobile-menu-header">
+      <span class="logo-title">АҒАШ</span>
+      <button type="button" class="close-btn" id="burger-close" aria-label="Закрыть меню">&times;</button>
+    </div>
+    <nav class="mobile-nav" aria-label="Мобильная навигация">
+      <ul class="mobile-nav-list">
+        <li><a href="#about" class="mobile-nav-link">О нас</a></li>
+        <li><a href="#catalog" class="mobile-nav-link">Каталог</a></li>
+        <li><a href="#calculator" class="mobile-nav-link">Калькулятор</a></li>
+        <li><a href="#services" class="mobile-nav-link">Услуги</a></li>
+        <li><a href="#gallery" class="mobile-nav-link">Галерея</a></li>
+        <li><a href="#reviews" class="mobile-nav-link">Отзывы</a></li>
+        <li><a href="#contacts" class="mobile-nav-link">Контакты</a></li>
+      </ul>
+      <div class="mobile-menu-footer">
+        <a href="#calculator" class="btn btn-primary btn-full mobile-nav-btn">Рассчитать стоимость</a>
+        <a href="tel:+77053334455" class="mobile-phone">+7 705 333 44 55</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="main-content">
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content fade-element">
+          <div class="hero-badge">Премиальная столярная мастерская • Каскелен</div>
+          <h1 class="hero-title">Мебель из массива по вашим размерам</h1>
+          <p class="hero-description">
+            Кухни, шкафы, гардеробные из берёзы, дуба и ясеня. Свой цех в Каскелене — без посредников и наценок салонов.
+          </p>
+          <div class="hero-actions">
+            <a href="#catalog" class="btn btn-primary">Смотреть каталог</a>
+            <a href="#calculator" class="btn btn-outline">Рассчитать стоимость</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container container-narrow text-center">
+        <div class="section-header fade-element">
+          <span class="section-subtitle">О мастерской</span>
+          <h2 class="section-title">Создаём мебель с душой и на века</h2>
+        </div>
+        <p class="about-text fade-element">
+          Семейная мастерская с 2016 года. 4 мастера, свой цех, фиксированная цена в договоре. Работаем с массивом берёзы, дуба и ясеня. Каждый проект — от замера до монтажа — ведёт один мастер.
+        </p>
+      </div>
+    </section>
+
+    <!-- CATALOG SECTION WITH FILTER TABS -->
+    <section class="section catalog-section" id="catalog">
+      <div class="container">
+        <div class="section-header text-center fade-element">
+          <span class="section-subtitle">Избранные проекты</span>
+          <h2 class="section-title">Каталог изделий из массива</h2>
+        </div>
+
+        <!-- FILTER TABS -->
+        <div class="filter-tabs fade-element" role="tablist" aria-label="Фильтр категорий каталога">
+          <button type="button" class="filter-tab is-active" data-filter="all" role="tab" aria-selected="true">Все</button>
+          <button type="button" class="filter-tab" data-filter="kitchen" role="tab" aria-selected="false">Кухни</button>
+          <button type="button" class="filter-tab" data-filter="wardrobe" role="tab" aria-selected="false">Гардеробные</button>
+          <button type="button" class="filter-tab" data-filter="closet" role="tab" aria-selected="false">Шкафы</button>
+          <button type="button" class="filter-tab" data-filter="table" role="tab" aria-selected="false">Столы</button>
+          <button type="button" class="filter-tab" data-filter="bath" role="tab" aria-selected="false">Ванная</button>
+        </div>
+
+        <!-- CATALOG GRID -->
+        <div class="grid grid-3 catalog-grid" id="catalog-grid">
+          <!-- KITCHENS -->
+          <article class="card catalog-card fade-element" data-category="kitchen">
+            <div class="catalog-img-wrapper">
+              <img src="assets/images/cat-kitchen-1.svg" alt="Кухня Классика из массива берёзы" width="500" height="350" class="catalog-img">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">Кухня «Классика»</h3>
+              <p class="catalog-desc">массив берёзы, фурнитура Blum</p>
+              <div class="catalog-footer">
+                <span class="catalog-price">от 650 000 ₸</span>
+                <button type="button" class="btn btn-sm btn-outline catalog-detail-btn">Подробнее</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card catalog-card fade-element" data-category="kitchen">
+            <div class="catalog-img-wrapper">
+              <img src="assets/images/cat-kitchen-2.svg" alt="Кухня Модерн из дуба" width="500" height="350" class="catalog-img">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">Кухня «Модерн»</h3>
+              <p class="catalog-desc">дуб, скрытые ручки, доводчики</p>
+              <div class="catalog-footer">
+                <span class="catalog-price">от 850 000 ₸</span>
+                <button type="button" class="btn btn-sm btn-outline catalog-detail-btn">Подробнее</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card catalog-card fade-element" data-category="kitchen">
+            <div class="catalog-img-wrapper">
+              <img src="assets/images/cat-kitchen-3.svg" alt="Кухня Компакт из ясеня" width="500" height="350" class="catalog-img">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">Кухня «Компакт»</h3>
+              <p class="catalog-desc">для небольших квартир, ясень</p>
+              <div class="catalog-footer">
+                <span class="catalog-price">от 480 000 ₸</span>
+                <button type="button" class="btn btn-sm btn-outline catalog-detail-btn">Подробнее</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- WARDROBES -->
+          <article class="card catalog-card fade-element" data-category="wardrobe">
+            <div class="catalog-img-wrapper">
+              <img src="assets/images/cat-wardrobe-1.svg" alt="Гардеробная П-образная из дуба" width="500" height="350" class="catalog-img">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">Гардеробная «П-образная»</h3>
+              <p class="catalog-desc">дуб, подсветка</p>
+              <div class="catalog-footer">
+                <span class="catalog-price">от 500 000 ₸</span>
+                <button type="button" class="btn btn-sm btn-outline catalog-detail-btn">Подробнее</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card catalog-card fade-element" data-category="wardrobe">
+            <div class="catalog-img-wrapper">
+              <img src="assets/images/cat-wardrobe-2.svg" alt="Гардеробная Линейная из берёзы" width="500" height="350" class="catalog-img">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">Гардеробная «Линейная»</h3>
+              <p class="catalog-desc">берёза, зеркала</p>
+              <div class="catalog-footer">
+                <span class="catalog-price">от 350 000 ₸</span>
+                <button type="button" class="btn btn-sm btn-outline catalog-detail-btn">Подробнее</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- CLOSETS -->
+          <article class="card catalog-card fade-element" data-category="closet">
+            <div class="catalog-img-wrapper">
+              <img src="assets/images/cat-closet-1.svg" alt="Шкаф-купе Астана из ясеня" width="500" height="350" class="catalog-img">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">Шкаф-купе «Астана»</h3>
+              <p class="catalog-desc">ясень, зеркала</p>
+              <div class="catalog-footer">
+                <span class="catalog-price">от 250 000 ₸</span>
+                <button type="button" class="btn btn-sm btn-outline catalog-detail-btn">Подробнее</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card catalog-card fade-element" data-category="closet">
+            <div class="catalog-img-wrapper">
+              <img src="assets/images/cat-closet-2.svg" alt="Стеллаж Лофт из дуба и металла" width="500" height="350" class="catalog-img">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">Стеллаж «Лофт»</h3>
+              <p class="catalog-desc">дуб + металл</p>
+              <div class="catalog-footer">
+                <span class="catalog-price">от 180 000 ₸</span>
+                <button type="button" class="btn btn-sm btn-outline catalog-detail-btn">Подробнее</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- TABLES -->
+          <article class="card catalog-card fade-element" data-category="table">
+            <div class="catalog-img-wrapper">
+              <img src="assets/images/cat-table-1.svg" alt="Обеденный стол Дастархан из массива дуба" width="500" height="350" class="catalog-img">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">Обеденный стол «Дастархан»</h3>
+              <p class="catalog-desc">массив дуба, 8 мест</p>
+              <div class="catalog-footer">
+                <span class="catalog-price">от 90 000 ₸</span>
+                <button type="button" class="btn btn-sm btn-outline catalog-detail-btn">Подробнее</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card catalog-card fade-element" data-category="table">
+            <div class="catalog-img-wrapper">
+              <img src="assets/images/cat-table-2.svg" alt="Рабочий стол Офис из берёзы" width="500" height="350" class="catalog-img">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">Рабочий стол «Офис»</h3>
+              <p class="catalog-desc">берёза, кабель-менеджмент</p>
+              <div class="catalog-footer">
+                <span class="catalog-price">от 120 000 ₸</span>
+                <button type="button" class="btn btn-sm btn-outline catalog-detail-btn">Подробнее</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- BATH -->
+          <article class="card catalog-card fade-element" data-category="bath">
+            <div class="catalog-img-wrapper">
+              <img src="assets/images/cat-bath-1.svg" alt="Тумба Спа из ясеня" width="500" height="350" class="catalog-img">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">Тумба «Спа»</h3>
+              <p class="catalog-desc">ясень, влагостойкое покрытие</p>
+              <div class="catalog-footer">
+                <span class="catalog-price">от 120 000 ₸</span>
+                <button type="button" class="btn btn-sm btn-outline catalog-detail-btn">Подробнее</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALCULATOR SECTION -->
+    <section class="section calculator-section" id="calculator">
+      <div class="container container-narrow">
+        <div class="section-header text-center fade-element">
+          <span class="section-subtitle">Онлайн-расчёт</span>
+          <h2 class="section-title">Калькулятор стоимости изделия</h2>
+        </div>
+
+        <div class="calculator-card fade-element">
+          <form class="calc-form" id="furniture-calc-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="calc-category" class="form-label">Категория мебели</label>
+                <select id="calc-category" class="form-select">
+                  <option value="650000">Кухня (база от 650 000 ₸)</option>
+                  <option value="400000">Гардеробная (база от 400 000 ₸)</option>
+                  <option value="250000">Шкаф (база от 250 000 ₸)</option>
+                  <option value="90000">Стол (база от 90 000 ₸)</option>
+                  <option value="120000">Ванная (база от 120 000 ₸)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="calc-material" class="form-label">Материал массива</label>
+                <select id="calc-material" class="form-select">
+                  <option value="1.0">Берёза (базовый коэффициент 1.0)</option>
+                  <option value="1.4">Дуб (премиум, коэфф. 1.4)</option>
+                  <option value="1.2">Ясень (прочность, коэфф. 1.2)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="calc-size" class="form-label">Размер / площадь (м²)</label>
+                <input type="number" id="calc-size" class="form-input" min="1" max="50" step="0.5" value="4" required>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full calc-submit-btn">Рассчитать стоимость</button>
+          </form>
+
+          <div class="calc-result-box" id="calc-result" style="display: none;">
+            <span class="calc-result-label">Предварительный расчёт:</span>
+            <div class="calc-result-price" id="calc-price-output">от 2 600 000 ₸ до 3 380 000 ₸</div>
+            <p class="calc-note">Точная стоимость — после бесплатного замера.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header text-center fade-element">
+          <span class="section-subtitle">Наши услуги</span>
+          <h2 class="section-title">Полный цикл столярного производства</h2>
+        </div>
+
+        <div class="grid grid-3 services-grid">
+          <article class="card service-card fade-element">
+            <h3 class="service-title">Кухни из массива</h3>
+            <p class="service-desc">Проектирование и изготовление кухонь из дуба, ясеня и берёзы с австрийской фурнитурой.</p>
+            <div class="service-price">от 650 000 ₸</div>
+          </article>
+
+          <article class="card service-card fade-element">
+            <h3 class="service-title">Шкафы и гардеробные</h3>
+            <p class="service-desc">Индивидуальные системы хранения, встроенные шкафы-купе и гардеробные комнаты.</p>
+            <div class="service-price">от 250 000 ₸</div>
+          </article>
+
+          <article class="card service-card fade-element">
+            <h3 class="service-title">Столы и стулья</h3>
+            <p class="service-desc">Обеденные столы Дастархан, письменные и кабинетные столы из цельного слэба и массива.</p>
+            <div class="service-price">от 90 000 ₸</div>
+          </article>
+
+          <article class="card service-card fade-element">
+            <h3 class="service-title">Мебель для ванной</h3>
+            <p class="service-desc">Влагостойкие тумбы под раковину, зеркальные шкафы из массива с пропиткой полиуретаном.</p>
+            <div class="service-price">от 120 000 ₸</div>
+          </article>
+
+          <article class="card service-card fade-element">
+            <h3 class="service-title">Реставрация мебели</h3>
+            <p class="service-desc">Восстановление антикварной и семейной мебели, перепокрытие лаком, устранение сколов.</p>
+            <div class="service-price">от 40 000 ₸</div>
+          </article>
+
+          <article class="card service-card fade-element">
+            <h3 class="service-title">Замер и проект</h3>
+            <p class="service-desc">Выезд мастера с образцами пород дерева, профессиональный замер и 3D-визуализация.</p>
+            <div class="service-price service-free">Бесплатно</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY SECTION (MASONRY GRID) -->
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-header text-center fade-element">
+          <span class="section-subtitle">Портфолио</span>
+          <h2 class="section-title">Галерея выполненных работ</h2>
+        </div>
+
+        <div class="masonry-grid fade-element">
+          <div class="masonry-item">
+            <img src="assets/images/gallery-1.svg" alt="Кухня из массива дуба в Алматы" width="600" height="400" class="masonry-img">
+          </div>
+          <div class="masonry-item">
+            <img src="assets/images/gallery-2.svg" alt="П-образная гардеробная из ясеня" width="600" height="550" class="masonry-img">
+          </div>
+          <div class="masonry-item">
+            <img src="assets/images/gallery-3.svg" alt="Обеденный стол Дастархан из дуба" width="600" height="450" class="masonry-img">
+          </div>
+          <div class="masonry-item">
+            <img src="assets/images/gallery-4.svg" alt="Шкаф-купе Астана с фрезеровкой" width="600" height="600" class="masonry-img">
+          </div>
+          <div class="masonry-item">
+            <img src="assets/images/gallery-5.svg" alt="Тумба для ванной Спа из ясеня" width="600" height="400" class="masonry-img">
+          </div>
+          <div class="masonry-item">
+            <img src="assets/images/gallery-6.svg" alt="Стеллаж Лофт дуб и металл" width="600" height="500" class="masonry-img">
+          </div>
+          <div class="masonry-item">
+            <img src="assets/images/gallery-7.svg" alt="Рабочий стол Офис из берёзы" width="600" height="420" class="masonry-img">
+          </div>
+          <div class="masonry-item">
+            <img src="assets/images/gallery-8.svg" alt="Реставрация винтажного комода" width="600" height="580" class="masonry-img">
+          </div>
+        </div>
+
+        <p class="gallery-disclaimer text-center">Фото предоставит заказчик</p>
+      </div>
+    </section>
+
+    <!-- REVIEWS SECTION -->
+    <section class="section reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-header text-center fade-element">
+          <span class="section-subtitle">Отзывы</span>
+          <h2 class="section-title">Мнения наших клиентов</h2>
+        </div>
+
+        <div class="grid grid-2 reviews-grid">
+          <article class="card review-card fade-element">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">«Кухня из дуба — произведение искусства. Сроки соблюдены, цена не изменилась.»</p>
+            <div class="review-author">
+              <strong class="author-name">Елена</strong>
+              <span class="author-location">г. Алматы</span>
+            </div>
+          </article>
+
+          <article class="card review-card fade-element">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">«Гардеробная встала идеально. Замерщик приехал на следующий день.»</p>
+            <div class="review-author">
+              <strong class="author-name">Владимир</strong>
+              <span class="author-location">г. Каскелен</span>
+            </div>
+          </article>
+
+          <article class="card review-card fade-element">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">«Заказывала стол из ясеня. Качество выше, чем в салонах за вдвое большую цену.»</p>
+            <div class="review-author">
+              <strong class="author-name">Айгуль</strong>
+              <span class="author-location">г. Алматы</span>
+            </div>
+          </article>
+
+          <article class="card review-card fade-element">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">«Реставрация бабушкиного комода — как новый!»</p>
+            <div class="review-author">
+              <strong class="author-name">Тимур</strong>
+              <span class="author-location">г. Алматы</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section faq-section" id="faq">
+      <div class="container container-narrow">
+        <div class="section-header text-center fade-element">
+          <span class="section-subtitle">Вопросы и ответы</span>
+          <h2 class="section-title">Вопросы перед заказом</h2>
+        </div>
+
+        <div class="faq-list fade-element">
+          <details class="faq-item">
+            <summary class="faq-question">Сколько стоит замер?</summary>
+            <div class="faq-answer">
+              <p>Замер и выезд мастера с образцами пород дерева по Алматы и Каскелену осуществляется абсолютно бесплатно.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Какие сроки изготовления?</summary>
+            <div class="faq-answer">
+              <p>В среднем изготовление занимает от 3 до 6 недель в зависимости от сложности изделия и объёма заказа.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Есть ли доставка?</summary>
+            <div class="faq-answer">
+              <p>Да, у нас собственная служба доставки и сборки по Алматы, Каскелену и всей Алматинской области.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Какое дерево лучше для кухни?</summary>
+            <div class="faq-answer">
+              <p>Для кухни наилучшим образом подходит массив дуба или ясеня благодаря высокой плотности, влагостойкости и устойчивости к перепадам температур.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Делаете ли по готовым чертежам?</summary>
+            <div class="faq-answer">
+              <p>Да, мы работаем как по готовым дизайнерским эскизам, так и разрабатываем чертежи с нуля под ваши размеры.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTS & ORDER FORM SECTION -->
+    <section class="section contacts-section" id="contacts">
+      <div class="container">
+        <div class="grid grid-2 contacts-grid">
+          <div class="contacts-info fade-element">
+            <span class="section-subtitle">Свяжитесь с нами</span>
+            <h2 class="section-title">Столярный цех в Каскелене</h2>
+            <p class="contacts-desc">Приезжайте к нам на производство, чтобы увидеть образцы древесины и этапы изготовления.</p>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <span class="contact-icon">📍</span>
+                <div>
+                  <strong>Адрес цеха:</strong>
+                  <p>г. Каскелен, ул. Абылай хана, 12</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-icon">🕒</span>
+                <div>
+                  <strong>Время работы:</strong>
+                  <p>Пн–Сб 9:00 — 19:00 (Вс — по записи)</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-icon">📞</span>
+                <div>
+                  <strong>Телефон:</strong>
+                  <p><a href="tel:+77053334455" class="contact-link">+7 705 333 44 55</a></p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-icon">✉️</span>
+                <div>
+                  <strong>Email:</strong>
+                  <p><a href="mailto:zakaz@agash-mebel.kz" class="contact-link">zakaz@agash-mebel.kz</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-card fade-element">
+            <h3 class="form-title">Заявка на замер</h3>
+            <p class="form-subtitle">Заполните форму для бесплатного консультационного выезда мастера.</p>
+
+            <form class="contact-form" id="furniture-order-form">
+              <div class="form-group">
+                <label for="order-name" class="form-label">Ваше имя</label>
+                <input type="text" id="order-name" name="name" class="form-input" placeholder="Елена" required>
+              </div>
+
+              <div class="form-group">
+                <label for="order-phone" class="form-label">Телефон</label>
+                <input type="tel" id="order-phone" name="phone" class="form-input" placeholder="+7 (705) 000-00-00" required>
+              </div>
+
+              <div class="form-group">
+                <label for="order-message" class="form-label">Что нужно изготовить</label>
+                 <textarea id="order-message" name="message" class="form-textarea" rows="4" placeholder="Укажите примерные размеры, желаемое дерево и ваши пожелания..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">Отправить заявку</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p class="footer-copy">© 2026 Столярная мастерская «Ағаш». Каскелен.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

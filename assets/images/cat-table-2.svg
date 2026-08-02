@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" width="100%" height="100%">
+  <rect width="500" height="350" rx="12" fill="#f5f2eb"/>
+  <!-- Desk Birch -->
+  <rect x="80" y="120" width="340" height="24" rx="4" fill="#d97706"/>
+  <rect x="100" y="144" width="24" height="140" fill="#b45309"/>
+  <rect x="376" y="144" width="24" height="140" fill="#b45309"/>
+  <rect x="280" y="144" width="90" height="100" rx="4" fill="#92400e"/>
+</svg>
